@@ -1,0 +1,2 @@
+/* components/classic/index.wxss */
+@import "../common.wxss";
