@@ -1,3 +1,9 @@
+import {
+  BookModel
+} from '../../models/book.js'
+
+const bookModel = new BookModel()
+
 // pages/book/book.js
 Page({
 
@@ -5,14 +11,19 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    // callback
+    // promise
+    // async await  --> wx does not support
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    bookModel.getHotList()
+    .then(res=>{
+      console.log(res)
+    })
   },
 
   /**

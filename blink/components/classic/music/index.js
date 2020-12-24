@@ -1,5 +1,7 @@
 // components/classic/music/index.js
-import { classicBeh } from '../classic-beh.js'
+import {
+  classicBeh
+} from '../classic-beh.js'
 
 const mMgr = wx.getBackgroundAudioManager()
 
@@ -22,7 +24,7 @@ Component({
     playSrc: 'images/player@play.png'
   },
 
-  attached: function (event) {
+  attached(event) {
     this._recoverStatus()
     this._monitorSwitch()
   },

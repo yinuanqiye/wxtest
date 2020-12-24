@@ -32,7 +32,7 @@ Page({
   },
 
   _updateClassic: function (nextOrPre) {
-    let index = this.data.classic.index
+    const index = this.data.classic.index
     classic.getClassic(index, nextOrPre, (res) => {
       this._getLikeStaus(res.id, res.type)
       this.setData({
